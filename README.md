@@ -25,7 +25,7 @@ docker run -d -p 8080:8000 --name quantum-app farman1/quantum-drug-app:latest
 Open in browser:
 http://localhost:8080
 
-DOCKER-QUANTUM-APP
+QUANTUM-APP
 <img width="957" height="534" alt="image" src="https://github.com/user-attachments/assets/15579b26-c78d-4452-9bae-08f843bcc2d1" />
 
 RESULTS
