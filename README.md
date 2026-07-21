@@ -2,6 +2,13 @@
 
 This project provides a **Dockerized Flask-based Quantum Drug Discovery application** that can be easily pulled and run from Docker Hub.
 
+## 📋 Prerequisites
+
+Before running the application, ensure the following are installed:
+
+- Docker
+- Git (optional, for cloning the repository)
+
 ---
 
 ## 🐳 Docker Image
@@ -37,6 +44,27 @@ http://localhost:8080
 > - If running the Docker container on an **AWS EC2** instance, allow inbound **TCP port 8080** in the EC2 Security Group before accessing the application.
 > - If running the container on your **local machine**, no EC2 Security Group configuration is required. Simply open **http://localhost:8080** in your browser.
 
+### 4️⃣ Stop the Container
+
+```bash
+docker stop quantum-app
+```
+
+### 5️⃣ Remove the Container
+
+```bash
+docker rm quantum-app
+```
+## 📁 Repository Structure
+
+```text
+.
+├── app.py
+├── Dockerfile
+├── requirements.txt
+├── templates/
+├── static/
+└── README.md
 
 ## 📸 Application Screenshots
 
@@ -84,9 +112,28 @@ This project demonstrates how to:
 - Run applications consistently across different environments
 - Prepare applications for Kubernetes deployment
 
+
 ## ☸️ Kubernetes Deployment
 
-This application is also deployed on Kubernetes using a multi-node Kind cluster.
+This application is also deployed on a **multi-node Kubernetes (Kind) cluster** with:
+
+- Deployment (2 replicas)
+- NodePort Service
+- Persistent Volume (PV)
+- Persistent Volume Claim (PVC)
 
 GitHub Repository:
 👉 https://github.com/Farmanali777/pod-quantum-app
+
+
+## 👨‍💻 Author
+
+**Farman Ali**
+
+DevOps | Docker | Kubernetes | Cloud
+
+Focused on building production-inspired cloud-native applications using Docker and Kubernetes.
+
+## 📄 License
+
+This project is available under the MIT License.
