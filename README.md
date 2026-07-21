@@ -65,6 +65,9 @@ docker rm quantum-app
 ├── templates/
 ├── static/
 └── README.md
+```
+
+## 📸 Application Screenshots
 
 ## 📸 Application Screenshots
 
