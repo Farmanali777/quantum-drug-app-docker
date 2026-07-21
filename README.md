@@ -6,6 +6,7 @@ This project provides a **Dockerized Flask-based Quantum Drug Discovery applicat
 
 ## 🐳 Docker Image
 
+👉 **Docker Hub:** https://hub.docker.com/r/farman1/quantum-drug-app
 👉 https://hub.docker.com/r/farman1/quantum-drug-app
 
 ---
