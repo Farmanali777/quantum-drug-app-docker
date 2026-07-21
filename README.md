@@ -68,9 +68,6 @@ docker rm quantum-app
 
 ```
 
-
-## 📸 Application Screenshots
-
 ## 📸 Application Screenshots
 
 ### 🏠 Home Page
