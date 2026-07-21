@@ -6,59 +6,87 @@ This project provides a **Dockerized Flask-based Quantum Drug Discovery applicat
 
 ## 🐳 Docker Image
 
-👉 **Docker Hub:** https://hub.docker.com/r/farman1/quantum-drug-app
 👉 https://hub.docker.com/r/farman1/quantum-drug-app
 
 ---
 
 ## ⚙️ How to Run
 
-### 1️⃣ Pull Image
+### 1️⃣ Pull the Docker Image
+
 ```bash
 docker pull farman1/quantum-drug-app:latest
-
 docker images
+```
 
-2️⃣ Run Container
+### 2️⃣ Run the Container
+
+```bash
 docker run -d -p 8080:8000 --name quantum-app farman1/quantum-drug-app:latest
+```
 
-3️⃣ Access Application
-Open in browser:
+### 3️⃣ Access the Application
+
+Open your browser:
+
+```text
 http://localhost:8080
+```
 
-QUANTUM-APP
+> **Note:**
+> - If running the Docker container on an **AWS EC2** instance, allow inbound **TCP port 8080** in the EC2 Security Group before accessing the application.
+> - If running the container on your **local machine**, no EC2 Security Group configuration is required. Simply open **http://localhost:8080** in your browser.
+
+
+## 📸 Application Screenshots
+
+### 🏠 Home Page
+
 <img width="957" height="534" alt="image" src="https://github.com/user-attachments/assets/15579b26-c78d-4452-9bae-08f843bcc2d1" />
 
-RESULTS
+### 📊 Prediction Results
+
 <img width="1039" height="645" alt="image" src="https://github.com/user-attachments/assets/bc890590-a498-4371-ad99-d5c1ca85e902" />
 
-PREDICTION ACTIVE
+### ✅ Active Prediction
+
 <img width="904" height="589" alt="image" src="https://github.com/user-attachments/assets/99b801e1-7c33-43f6-93af-0514ec992192" />
 
-PREDICTION INACTIVE
+### ❌ Inactive Prediction
+
 <img width="935" height="615" alt="image" src="https://github.com/user-attachments/assets/f05011d2-ca68-4b9a-9309-19a50ae952fa" />
 
-PREDICTION INVALID
+### ⚠️ Invalid Input Validation
+
 <img width="857" height="550" alt="image" src="https://github.com/user-attachments/assets/4520c66e-f749-4ed8-b439-9c8920e5f4bc" />
 
-🧱 Features
-Flask-based Quantum Drug Discovery interface
-Fully containerized using Docker
-Easy deployment with single command
-Ready for Kubernetes integration
-🛠️ Technologies Used
-Python (Flask)
-Docker
-Linux
-🎯 Use Case
+## 🧱 Features
+
+- Flask-based Quantum Drug Discovery web application
+- Fully containerized using Docker
+- Simple one-command deployment
+- Consistent execution across environments
+- Ready for Kubernetes deployment
+
+## 🛠️ Technologies Used
+
+- Python
+- Flask
+- Docker
+- Linux
+- 
+## 🎯 Use Case
 
 This project demonstrates how to:
 
-Package applications into Docker containers
-Share applications via Docker Hub
-Run applications consistently across environments
+- Package a Flask application into a Docker container
+- Publish container images to Docker Hub
+- Run applications consistently across different environments
+- Prepare applications for Kubernetes deployment
 
 ## ☸️ Kubernetes Deployment
 
-This app is also deployed on Kubernetes:
+This application is also deployed on Kubernetes using a multi-node Kind cluster.
+
+GitHub Repository:
 👉 https://github.com/Farmanali777/pod-quantum-app
