@@ -13,6 +13,7 @@ Before running the application, ensure the following are installed:
 
 ## 🐳 Docker Image
 
+**Docker Hub Repository:**
 👉 https://hub.docker.com/r/farman1/quantum-drug-app
 
 ---
@@ -125,7 +126,7 @@ This application is also deployed on a **multi-node Kubernetes (Kind) cluster** 
 - Persistent Volume (PV)
 - Persistent Volume Claim (PVC)
 
-GitHub Repository:
+**GitHub Repository:**
 👉 https://github.com/Farmanali777/pod-quantum-app
 
 
