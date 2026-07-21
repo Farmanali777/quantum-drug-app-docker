@@ -65,7 +65,9 @@ docker rm quantum-app
 ├── templates/
 ├── static/
 └── README.md
+
 ```
+
 
 ## 📸 Application Screenshots
 
@@ -105,7 +107,8 @@ docker rm quantum-app
 - Flask
 - Docker
 - Linux
-- 
+
+ 
 ## 🎯 Use Case
 
 This project demonstrates how to:
